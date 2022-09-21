@@ -2,6 +2,7 @@ import {Route,Routes,Navigate} from "react-router-dom"
 import Main from "./core/main/Main";
 import Register from "./core/register/Register"
 import Login from "./core/login/Login";
+import "./app.css"
 
 function App() {
   const user = localStorage.getItem("token")
