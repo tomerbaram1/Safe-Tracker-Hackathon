@@ -1,0 +1,27 @@
+.main-parent{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(-145deg, rgb(36, 181, 225), rgb(4, 41, 68));
+}
+.where{
+    margin-top: 7vh;
+    color: white;
+    text-shadow:-5px 10px 20px rgba(0, 0, 0, 0.254) ;
+
+}
+.card{
+    width: 25em;
+    height: 30em;
+    margin-top: 7vh;
+    border-radius: 2em;
+    background: linear-gradient(-145deg, white, rgb(218, 218, 218));
+    border: 3px solid white;
+    text-align: center;
+    color: rgb(4, 41, 68);
+
+}
+.last-seen{
+    color: rgb(131, 131, 131);
+}
