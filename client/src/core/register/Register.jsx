@@ -21,7 +21,7 @@ import axios from 'axios';
    e.preventDefault()
    try{
     const url = "http://localhost:5000/api/users";
-    const {data:res} = await axios.post(url,data)
+    await axios.post(url,data)
     navigate("/login")
    }catch(error){
      if(error.response && 

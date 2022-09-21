@@ -16,14 +16,16 @@ const UserSchema = new mongoose.Schema({
         type: String,
         required:[true, 'The password text field is required']
     },
-    child:{
-        type: Array,
-        required:[false, 'The password text field is required']
-    }
+    children:[
+    {childname: String,
+    phone: String,
+    location:String            }
+]
+
 })
 UserSchema.methods.generateAuthToken = function (){
     const token = jwt.sign({_id: this._id}, process.env.JWTPRIVATEKEY,{expiresIn:"7d"})
-    return token};
+    return token}
 
 const User = mongoose.model('user', UserSchema);
 
