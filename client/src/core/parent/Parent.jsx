@@ -1,7 +1,8 @@
 import "./parent.css";
 import React from "react";
 import { useState } from "react";
-
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import 'animate.css'
 import axios from "axios";
 
 const ParentApp = (props) => {
@@ -108,10 +109,11 @@ const ParentApp = (props) => {
          { `Last seen on ${time} `}
         </p> */}
       </div>
+      <LocationOnIcon className="gps-icon"/>
       {props.openSOS && (
         <div className="sos-call">
           <h4>SOS call from your child!</h4>
-          <button className="yn-btn">Call The Police</button>
+          <a href="tel:0545771199" className="call-btn">Call The Police</a>
           <button className="yn-btn" onClick={()=> props.setOpenSOS(!props.openSOS)}>close SOS call</button>
         </div>
       )}

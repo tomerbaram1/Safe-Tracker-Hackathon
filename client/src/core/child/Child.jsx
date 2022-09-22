@@ -18,7 +18,7 @@ const [activated] = useState(true)
             console.log(lat, long)
 
             if ((lat === "32.0872" || "32.0871") && (long === "34.8041" )){
-                props.setLocation("CyberPro");
+                props.setLocation("CYBERPRO Israel");
             
             }
             else if (lat === "32.0871" && long === "34.8039"){
@@ -59,7 +59,7 @@ const [activated] = useState(true)
             <div className="sos-modal"> 
                 <h5>ARE YOU SURE YOU WANT TO CALL FOR HELP?</h5>
                 <button className="yn-btn" onClick={()=> props.setOpenSOS(!props.openSOS)}>YES</button>
-                <button className="yn-btn" onClick={()=> [props.setHelp(!props.help), props.setOpenSOS(!props.openSOS)]}>NO</button>
+                <button className="yn-btn" onClick={()=> props.setHelp(!props.help)}>NO</button>
             </div>
            )}
         </div>
