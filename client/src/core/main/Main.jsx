@@ -1,5 +1,7 @@
 import "./main.css"
+
 import {Link} from 'react-router-dom'
+
 
 import React from 'react'
 
@@ -12,17 +14,20 @@ const handleLogout = () =>{
 
     return (
     <div className="main-container">
-      <nav className="navbar">
+
+      <div className="general">
 
         <h1>Safe Tracker</h1>
-        <button className="button" onClick={handleLogout}>
+        <button className="log-out-btn" onClick={handleLogout}>
             Logout
         </button>
-      </nav>
-      <div>
-        <h1>Are you the parent or the child?</h1>
-       <Link to = "/Parent"> <button>Parent</button></Link>
-       <Link to = "/Child"> <button>Child</button></Link>
+
+      </div>
+      <div className="who">
+        <h1>Who are you?</h1>
+        <Link to = "/parent"><button className="who-btn">Parent</button></Link>
+        <Link to = "/child"><button className="who-btn">Child</button></Link>
+
       </div>
     </div>
   )
