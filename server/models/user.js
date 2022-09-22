@@ -19,7 +19,8 @@ const UserSchema = new mongoose.Schema({
     children:[
     {childname: String,
     phone: String,
-    location:String            }
+    location:String }
+   
 ]
 
 })

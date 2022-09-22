@@ -8,6 +8,7 @@ router.delete("/:id",async(req,res) =>{
 })
 
 router.get("/",async(req,res)=>{
+	console.log('5')
 	const users = await User.find({})
 	return res.send(users)
 })
@@ -18,7 +19,6 @@ router.post("/", async (req, res) => {
 		const user = await User.findOne({ email: req.body.email });
 		
 		if (user){
-			console.log('2')
 			return res
 				.status(409)
 				.send({ message: "User with given email already Exist!" })};
@@ -35,13 +35,13 @@ router.post("/", async (req, res) => {
 });
 
 
-
 router.put('/:id',async(req,res)=>{
 	try {
+		console.log('1');
 		 const updatedResult = await User.findByIdAndUpdate(
 		 req.params.id,
 		 {$push: {"children": {childname: req.body.childname, phone: req.body.phone, location: req.body.location}}},
-		 {safe: true, upsert: true, new : true})
+		 )
 		 return res.send(updatedResult)
          }catch(error){
 			 console.log(error);
