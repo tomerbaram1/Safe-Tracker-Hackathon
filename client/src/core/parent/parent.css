@@ -25,3 +25,9 @@
 .last-seen{
     color: rgb(131, 131, 131);
 }
+.child-form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -5,37 +5,30 @@ import 'animate.css'
 
 const ChildApp = (props) => {
   const [share, setShare] = useState(false)
-const [activated, setActivated] = useState(true)
+const [activated] = useState(true)
 
   const FindLocation = () => {
         navigator.geolocation.getCurrentPosition((position)=> {
             const latOrigin = position.coords.latitude
             const longOrigin = position.coords.longitude
-            console.log(position);
-
-            const TimeStamp = position.timestamp
-            const TimeCalc = new Date(TimeStamp * 1000)
-            const Time = TimeCalc.toLocaleTimeString("it-IT")
-            console.log(Time);
 
             const lat = latOrigin.toString().slice(0,7)
             const long = longOrigin.toString().slice(0,7)
 
-            // console.log(lat, long)
+            console.log(lat, long)
 
-            if (lat === "32.0872" && long === "34.8041"){
-                props.setData("CyberPro");
-                // console.log("cyber pro");
+            if ((lat === "32.0872" || "32.0871") && (long === "34.8041" || "34.8040")){
+                props.setLocation("CyberPro");
             
             }
             else if (lat === "32.0871" && long === "34.8038"){
-                props.setData("SumSum")
+                props.setLocation("SumSum")
             }
             else if (lat === "32.0873" && long === "34.8036"){
-                props.setData("Falafel")
+                props.setLocation("Falafel")
             }
             else{
-                props.setData("idk")
+                props.setLocation("Loading...")
             }
 
         })
