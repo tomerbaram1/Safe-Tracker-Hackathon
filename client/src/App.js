@@ -10,6 +10,8 @@ import { useState } from "react";
 
 function App() {
   const [location, setLocation] = useState("")
+  const [help, setHelp] = useState(false)
+  const [openSOS, setOpenSOS] = useState (false)
   // const user = localStorage.getItem("token")
   return (
     <div className="App">
@@ -23,8 +25,8 @@ function App() {
         <Route path = "/parent" element={<ParentApp/>}></Route>
 
       </Routes> */}
-      <ChildApp setLocation={setLocation} location = {location}/>
-      <ParentApp  setLocation={setLocation} location = {location}/>
+      <ChildApp setLocation={setLocation} location = {location} help ={help} setHelp={setHelp} openSOS={openSOS} setOpenSOS={setOpenSOS} />
+      <ParentApp  setLocation={setLocation} location = {location} help ={help} setHelp = {setHelp} openSOS={openSOS} setOpenSOS={setOpenSOS} />
     </div>
   );
 }

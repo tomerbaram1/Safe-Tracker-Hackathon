@@ -17,11 +17,11 @@ const [activated] = useState(true)
 
             console.log(lat, long)
 
-            if ((lat === "32.0872" || "32.0871") && (long === "34.8041" || "34.8040")){
+            if ((lat === "32.0872" || "32.0871") && (long === "34.8041" )){
                 props.setLocation("CyberPro");
             
             }
-            else if (lat === "32.0871" && long === "34.8038"){
+            else if (lat === "32.0871" && long === "34.8039"){
                 props.setLocation("SumSum")
             }
             else if (lat === "32.0873" && long === "34.8036"){
@@ -53,6 +53,15 @@ const [activated] = useState(true)
         {share &&(
             <h1 className="sharing">Sharing Your Location...</h1>
         )}
+           <button onClick={()=>props.setHelp(!props.help)} className="sos">S O S</button>
+
+           {props.help &&(
+            <div className="sos-modal"> 
+                <h5>ARE YOU SURE YOU WANT TO CALL FOR HELP?</h5>
+                <button className="yn-btn" onClick={()=> props.setOpenSOS(!props.openSOS)}>YES</button>
+                <button className="yn-btn" onClick={()=> [props.setHelp(!props.help), props.setOpenSOS(!props.openSOS)]}>NO</button>
+            </div>
+           )}
         </div>
     )
 }

@@ -11,6 +11,7 @@ const ParentApp = (props) => {
     childname: "",
     location: "",
   });
+  const [addChild, setAddChild] = useState(false)
 
   const handleChange = ({ currentTarget: input }) => {
     setData({ ...data, [input.name]: input.value });
@@ -66,6 +67,9 @@ const ParentApp = (props) => {
   };
   return (
     <div className="main-parent">
+      {addChild &&(
+
+      
       <form className="child-form-container" onSubmit={handleUpdate}>
         <input
           type="text"
@@ -86,11 +90,13 @@ const ParentApp = (props) => {
           required
           className="input"
         />
-        <button type="submit" className="button">
+      </form>
+      )}
+        <button type="submit" className="add-child-btn"
+        onClick={()=> setAddChild(!addChild)}>
           {" "}
           Add a child
         </button>
-      </form>
       {console.log(data.childname)}
       <h1 className="where">Where is {data.childname} ?</h1>
       <div className="card">
@@ -102,6 +108,13 @@ const ParentApp = (props) => {
          { `Last seen on ${time} `}
         </p> */}
       </div>
+      {props.openSOS && (
+        <div className="sos-call">
+          <h4>SOS call from your child!</h4>
+          <button className="yn-btn">Call The Police</button>
+          <button className="yn-btn" onClick={()=> props.setOpenSOS(!props.openSOS)}>close SOS call</button>
+        </div>
+      )}
     </div>
   );
 };
