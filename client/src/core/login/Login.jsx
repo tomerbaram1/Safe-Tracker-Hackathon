@@ -37,7 +37,7 @@ import axios from 'axios';
          <div className="login-form">
             <div className="top">
             <form className="login-form-container" onSubmit={handleSubmit}>
-             <h1>Login to Your Account</h1>
+             <h1>Log in</h1>
              <input type= 'text'
              placeholder="UserName"
              name='userName'
@@ -58,15 +58,11 @@ import axios from 'axios';
              <button type="submit" className="button">Sign In</button>
             </form>
             </div>
-            <div className="bottom">
-            <h1>New Here?</h1>
                 <Link to="/register" >
-                    <button type="button" className="button">
-                        Register
+                    <button className="reg-btn" >
+                        New Here?
                     </button>
                 </Link>
-
-            </div>
          </div>
          </div>
        )

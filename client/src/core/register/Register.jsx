@@ -35,16 +35,11 @@ import axios from 'axios';
      <div className="register-container">
      <div className="register-form">
         <div className="top">
-            <h1>Welcome Back!</h1>
-            <Link to="/login" >
-                <button type="button" className="button">
-                    Sign In
-                </button>
-            </Link>
+            <h1>Sign In</h1>
+
         </div>
         <div className="bottom">
         <form className="register-form-container" onSubmit={handleSubmit}>
-         <h1>Create Account</h1>
          <input type= 'text'
          placeholder="User-Name"
          name='username'
@@ -70,6 +65,11 @@ import axios from 'axios';
          {error&&<div className="error-msg">{error}</div>}
 
          <button type="submit" className="button">Sign Up</button>
+         <Link to="/login" >
+                <button className="log-btn" >
+                    Already have an account?
+                </button>
+            </Link>
         </form>
         </div>
      </div>
