@@ -15,7 +15,9 @@
 }
 .login-form-container {
 	width: 100%;
+
     height: 26vh;
+
     display: flex;
     border-radius: 2%;
     align-items: center;
@@ -57,7 +59,9 @@
 }
 
 .error-msg {
+
 	width: 40vw;
+
 	padding: 5%;
 	margin-top: 1vh;
 	font-size: large;
@@ -68,6 +72,7 @@
 }
 
 .bottom {
+	margin-top: 18%;
 	flex: 1;
 	display: flex;
 	flex-direction: column;
@@ -84,6 +89,7 @@
 	font-size: 3vh;
 	align-self: center;
 }
+
 
 
 

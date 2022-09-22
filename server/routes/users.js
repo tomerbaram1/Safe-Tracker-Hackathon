@@ -34,7 +34,25 @@ router.post("/", async (req, res) => {
 	}
 });
 
+
+
+router.put('/:id',async(req,res)=>{
+	try {
+		 const updatedResult = await User.findByIdAndUpdate(
+		 req.params.id,
+		 {$push: {"children": {childname: req.body.childname, phone: req.body.phone, location: req.body.location}}},
+		 {safe: true, upsert: true, new : true})
+		 return res.send(updatedResult)
+         }catch(error){
+			 console.log(error);
+}
+
+});
+
+
+
 module.exports = router
+
 
 
 
