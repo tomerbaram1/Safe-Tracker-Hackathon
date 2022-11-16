@@ -19,7 +19,7 @@ Child section:
 Parent section:
 
  <img width="381" alt="PARENT" src="https://user-images.githubusercontent.com/108272013/202144886-27714814-cd08-4e0a-84e0-1fbbf5985e49.png">
-59
+
 
 
 Child SOS button:
@@ -35,5 +35,8 @@ Parent SOS alert:
 Currently developing the next versioN(React-native):
 
 
- [NEXT](https://user-images.githubusercontent.com/108272013/202144938-ef3b7761-7501-4f4b-b272-edee602588d8.jpeg)
-24
+![NEXT](https://user-images.githubusercontent.com/108272013/202145232-00360ce2-775f-49cb-85fe-92fca63f3b8b.jpeg)
+
+
+
+
