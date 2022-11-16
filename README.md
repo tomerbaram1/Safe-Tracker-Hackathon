@@ -11,15 +11,29 @@ HTML, CSS, JavaScript, React.js, Express, MongoDB, Mongoose, JWT, Bcrypt
 
 Child section:
 
-צילום מסך 2022-10-31 ב-11 03 47
+<img width="329" alt="TRACKER" src="https://user-images.githubusercontent.com/108272013/202144875-9e47afaf-c475-453f-b502-ff6f3d5545d7.png">
+
+
+
 
 Parent section:
 
-צילום מסך 2022-10-31 ב-11 05 59
+ <img width="381" alt="PARENT" src="https://user-images.githubusercontent.com/108272013/202144886-27714814-cd08-4e0a-84e0-1fbbf5985e49.png">
+59
+
 
 Child SOS button:
-צילום מסך 2022-10-31 ב-11 04 06
+
+<img width="329" alt="SOS" src="https://user-images.githubusercontent.com/108272013/202144910-157b5c92-5049-436f-ba9b-02361c9148ce.png">
+
+
 Parent SOS alert:
-צילום מסך 2022-10-31 ב-11 06 24
-Currently developing the next version:
-צילום מסך 2022-10-31 ב-11 06 24
+
+<img width="381" alt="PARENTSOS" src="https://user-images.githubusercontent.com/108272013/202144922-aff4c0c9-e8d1-49ad-a8b9-491aa880aa53.png">
+
+
+Currently developing the next versioN(React-native):
+
+
+ [NEXT](https://user-images.githubusercontent.com/108272013/202144938-ef3b7761-7501-4f4b-b272-edee602588d8.jpeg)
+24
